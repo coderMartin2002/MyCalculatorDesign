@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-family: cursive, Verdana, sans-serif;
+  border-radius: 30px;
+  text-align: center;
+}
+body {
+  background-color: black;
+  padding: 25px;
+  border-radius: 0;
+  height: 100%;
+}
+.flexbox-styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel-wrapper {
+  background-color: darkblue;
+  padding: 20px;
+  width: 400px;
+  height: fit-content;
+  border: 4px solid aqua;
+  border-style: double;
+  box-shadow: 0 aliceblue;
+  transition: box-shadow 2s;
+  border-radius: 15px;
+}
+.panel-wrapper:hover {
+  border: 8px solid aqua;
+  border-style: double;
+  box-shadow: 20px 20px 10px aliceblue;
+}
+.top-header {
+  background-color: black;
+  color: yellow;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 15px;
+}
+.inputs-wrapper {
+  background-image: linear-gradient(darkblue, aqua);
+  padding: 15px;
+  margin-bottom: 15px;
+  color: snow;
+  border-radius: 10px;
+  border-style: double;
+  border: 4px solid aqua;
+}
+.inputs-wrapper:hover {
+  border: 8px solid aqua;
+  border-style: double;
+}
+.value-input {
+  padding: 10px;
+  margin: 10px;
+  width: 70px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.value-input:hover {
+  padding: 12px;
+  margin: 12px;
+  background-color: rgb(255, 224, 234);
+  border: 8px solid black;
+}
+.operators-wrapper {
+  background-image: linear-gradient(aqua, darkblue);
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 4px solid aqua;
+  border-radius: 10px;
+  border-style: double;
+}
+.operators-wrapper:hover {
+  border: 8px solid aqua;
+  border-radius: 15px;
+  border-style: double;
+}
+.operator {
+  background-image: linear-gradient(darkblue, aqua);
+  padding: 10px;
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  opacity: 0.8;
+  border-radius: 15px;
+  outline: snow solid 3px;
+  transition: width 1s, height 1s;
+}
+.operator:hover {
+  width: 90px;
+  height: 90px;
+  padding: 12px;
+  margin: 7px;
+  opacity: 1;
+  border: 5px solid black;
+  border-radius: 20px;
+  color: darkblue;
+}
+.mark {
+  background-image: linear-gradient(rgb(146, 168, 209), black);
+  color: yellow;
+  font-size: 25px;
+}
+.note-option {
+  background-color: #A2242F;
+  font-size: 14px;
+  color: yellow;
+  width: fit-content;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  width: 70px;
+  height: 60px;
+  outline: snow solid 3px;
+  transition: width 1.2s, height 1.2s;
+}
+.note-option:hover {
+  width: 100px;
+  height: 100px;
+  padding: 12px;
+  margin: 7px;
+  border: 5px solid black;
+  border-radius: 40px;
+}
+.result-panel {
+  background-color: black;
+  color: snow;
+  width: fit-content;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  padding: 10px;
+  transition: padding 1s;
+}
+.result-panel:hover {
+  padding: 20px;
+  font-size: 18px;
+}
+.function-btns {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+}
+.clear-btn {
+  padding: 10px;
+  background-image: linear-gradient(darkblue, aqua);
+  opacity: 0.8;
+  margin: 0 auto;
+  color: yellow;
+  outline: snow solid 3px;
+  margin-bottom: 10px;
+}
+.clear-btn:hover {
+  padding: 12.5px;
+  opacity: 1;
+}
+.extra-content {
+  width: 600px;
+  height: 500px;
+  padding: 15px;
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid rgb(146, 168, 209);
+  transition: border 2s;
+}
+.extra-content:hover {
+  border: 10px solid rgb(146, 168, 209);
+}
+.note-panel {
+  width: 60%;
+  height: 55%;
+  background-image: linear-gradient(rgb(146, 168, 209), black);
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 5px solid rgb(146, 168, 209);
+  transition: border 2s;
+  overflow: auto;
+  opacity: 0.6;
+}
+.note-panel:hover {
+  opacity: 1;
+  border: 10px solid rgb(146, 168, 209);
+}
+.note-field {
+  width: 90%;
+  height: 50%;
+  padding: 5px;
+  letter-spacing: 2px;
+}
+.note-field:hover {
+  background-color: yellowgreen;
+}
+.note-btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  margin-top: 5px;
+  margin-right: 8px;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 1.5px;
+  border: 3px dashed #FFA500;
+}
+.note-output {
+  width: 90%;
+  height: 70%;
+  overflow: auto;
+  background-image: linear-gradient(rgb(146, 168, 209), black);
+  border: 5px solid rgb(146, 168, 209);
+  transition: border 2s;
+  color: aliceblue;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  opacity: 0.6;
+}
+.note-output:hover {
+  opacity: 1;
+  border: 10px solid rgb(146, 168, 209);
+}
+.note {
+  background-color: #00758F;
+  padding: 5px;
+  transition: font-size 0.8s;
+  font-size: 14px;
+  font-family: 'Kanit', sans-serif;
+  color: #FFA500;
+  overflow-wrap: break-word;
+}
+.note:hover {
+  font-size: 17px;
+  border: 1.6px solid rgb(221, 65, 36);
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.note-btn:hover {
+  background-image: linear-gradient(#00B2FF, darkblue);
+  color: #FFA500;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 16px;
+  padding: 10px;
+}
+.return-btn {
+  padding: 10px;
+  position: static;
+  margin-top: 15px;
+}
+.return-btn:hover {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.function-btns {
+  display: inline-block;
+}
+.start-btn {
+  margin-top: 200px;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  background-color: indigo;
+}
+.start-btn:hover {
+  padding: 25px;
+}
+.back-btn {
+  background-color: inherit;
+  color: yellow;
+  padding: 10px;
+  margin-left: 6px;
+  outline: snow solid 3px;
+}
+.back-btn:hover {
+  padding: 12.5px;
+  outline: snow solid 3px;
+}
